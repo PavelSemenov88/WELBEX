@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+}
+
+@mixin colText {
+  color: #e4e5ea;
+}
+
+body {
+  background: #1e1e1e;
+  @include colText;
+}
+
+@mixin position {
+  display: flex;
+  justify-content: space-between;
+}
+
+@mixin iconSize {
+  width: 16px;
+  height: 16px;
+}
+
+@mixin footerTitle {
+  margin-bottom: 20px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #656566;
+}
+
+@mixin footerText {
+  display: block;
+  margin-bottom: 10px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+@mixin textGradient {
+  background: linear-gradient(92deg, #fcb045 27.14%, #ff3f78 121.36%), #e4e5ea;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+@import "block/header";
+@import "block/section";
+// @import "block/ball";
+@import "block/footer";

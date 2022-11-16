@@ -1,0 +1,158 @@
+.header {
+  margin-top: 57px;
+  
+
+  .container {
+    max-width: 1140px;
+    margin: 0 auto;
+
+    .container__header {
+      @include position;
+      align-items: center;
+      position: relative;
+      z-index: 3;
+
+      .header__left {
+        width: 61%;
+        @include position;
+        align-items: center;
+
+        .header__logo {
+          width: 140px;
+
+          .header__logo-img {
+            height: 24px;
+            background: url("../../img/logo_welbex.svg") no-repeat;
+          }
+
+          .header__logo-text {
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 300;
+            font-size: 10px;
+            line-height: 12px;
+            @include colText;
+          }
+        }
+        .header__menu {
+          width: 72%;
+          display: flex;
+          justify-content: space-between;
+
+          .header__menu-text {
+            .menu-text {
+              font-family: "Inter";
+              font-style: normal;
+              font-weight: 500;
+              font-size: 16px;
+              line-height: 19px;
+              @include colText;
+            }
+          }
+        }
+      }
+      .header__contact {
+        width: 27%;
+        @include position;
+        align-items: center;
+        
+
+        .header__contact-numb {
+          @include colText;
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 19px;
+        }
+
+        .header__contact-messenger {
+          width: 38%;
+          @include position;
+          align-items: center;
+
+          .messenger__insta {
+            @include iconSize;
+            background: url("../../img/insta.svg") no-repeat;
+          }
+
+          .messenger__phone {
+            @include iconSize;
+            background: url("../../img/phone.svg") no-repeat;
+          }
+
+          .messenger__whatsapp {
+            @include iconSize;
+            background: url("../../img/whatsapp.svg") no-repeat;
+          }
+        }
+      }
+    }
+    .container__logo-text {
+      margin-top: 10px;
+      margin-bottom: 94px;
+      width: 135px;
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 300;
+      font-size: 10px;
+      line-height: 12px;
+    }
+    .container__ball {
+      position: relative;
+      z-index: 2;
+      left: 50%;
+
+      .ball__purple {
+        position: absolute;
+        z-index: 1;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        left: 160px;
+        top: -205px;
+
+        background: radial-gradient(
+          64% 64% at 27.25% 26.5%,
+          rgba(236, 208, 255, 0.64) 0%,
+          rgba(161, 93, 207, 0.24) 59.67%,
+          rgba(118, 49, 164, 0.208) 78.59%,
+          rgba(86, 24, 128, 0.232) 100%
+        );
+        box-shadow: 3px 6px 27px -10px rgba(177, 118, 217, 0.25);
+        filter: blur(5px);
+        backdrop-filter: blur(2px);
+      }
+      .light__purple {
+        z-index: 1;
+        position: absolute;
+        width: 259px;
+        height: 259px;
+        left: -120px;
+        top: -350px;
+        background: #833ab4;
+        opacity: 0.5;
+        filter: blur(196px);
+      }
+
+      .ball__red-big {
+        z-index: 1;
+        position: absolute;
+        width: 83px;
+        height: 83px;
+        border-radius: 50%;
+        left: -195px;
+        top: -125px;
+        background: radial-gradient(
+          64% 64% at 27.25% 26.5%,
+          rgba(255, 208, 208, 0.536) 0%,
+          rgba(212, 93, 93, 0.264) 59.67%,
+          rgba(167, 49, 49, 0.248) 78.59%,
+          rgba(130, 25, 25, 0.248) 100%
+        );
+        box-shadow: 3px 6px 27px -10px rgba(223, 125, 125, 0.25);
+        backdrop-filter: blur(2px);
+      }
+    }
+  }
+}

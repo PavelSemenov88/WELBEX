@@ -1,0 +1,96 @@
+.footer {
+  margin-bottom: 20px;
+  .container {
+    max-width: 1140px;
+    margin: 0 auto;
+
+    .container__footer {
+      @include position;
+
+      .footer__left {
+        width: 61%;
+        @include position;
+
+        .footer__left-about {
+          .about__title {
+            @include footerTitle;
+          }
+
+          .about__text {
+            @include footerText;
+          }
+        }
+
+        .footer__left-menu {
+          .menu__title {
+            @include footerTitle;
+          }
+
+          .menu__colm {
+            display: flex;
+
+            .menu__column {
+              .menu__text {
+                @include footerText;
+                width: 212px;
+              }
+            }
+          }
+        }
+      }
+      .footer__right {
+        text-align: right;
+
+        .footer__right-title {
+          @include footerTitle;
+        }
+        .footer__right-numb {
+          @include colText;
+          display: block;
+          margin-bottom: 20px;
+        }
+        .footer__right-messenger {
+          margin-bottom: 20px;
+          @include position;
+          justify-content: flex-end;
+          // width: 66px;
+          // text-align: right;
+
+          .messenger__insta {
+            @include iconSize;
+            background: url("../../img/insta.svg") no-repeat;
+            margin-right: 14px;
+          }
+          .messenger__phone {
+            @include iconSize;
+            background: url("../../img/phone.svg") no-repeat;
+            margin-right: 14px;
+          }
+          .messenger__whatsapp {
+            @include iconSize;
+            background: url("../../img/whatsapp.svg") no-repeat;
+          }
+        }
+        .footer__right-address {
+          @include footerText;
+          margin-bottom: 70px;
+        }
+        .footer__right-text1 {
+          font-family: "Montserrat";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 15px;
+        }
+        .footer__right-text2 {
+          font-family: "Montserrat";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 15px;
+          text-decoration-line: underline;
+        }
+      }
+    }
+  }
+}

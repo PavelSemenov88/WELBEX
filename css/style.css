@@ -1,0 +1,389 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #1e1e1e;
+  color: #e4e5ea;
+}
+
+.header {
+  margin-top: 57px;
+}
+.header .container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+.header .container .container__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 3;
+}
+.header .container .container__header .header__left {
+  width: 61%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .container .container__header .header__left .header__logo {
+  width: 140px;
+}
+.header .container .container__header .header__left .header__logo .header__logo-img {
+  height: 24px;
+  background: url("../../img/logo_welbex.svg") no-repeat;
+}
+.header .container .container__header .header__left .header__logo .header__logo-text {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 12px;
+  color: #e4e5ea;
+}
+.header .container .container__header .header__left .header__menu {
+  width: 72%;
+  display: flex;
+  justify-content: space-between;
+}
+.header .container .container__header .header__left .header__menu .header__menu-text .menu-text {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #e4e5ea;
+}
+.header .container .container__header .header__contact {
+  width: 27%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .container .container__header .header__contact .header__contact-numb {
+  color: #e4e5ea;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+}
+.header .container .container__header .header__contact .header__contact-messenger {
+  width: 38%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .container .container__header .header__contact .header__contact-messenger .messenger__insta {
+  width: 16px;
+  height: 16px;
+  background: url("../../img/insta.svg") no-repeat;
+}
+.header .container .container__header .header__contact .header__contact-messenger .messenger__phone {
+  width: 16px;
+  height: 16px;
+  background: url("../../img/phone.svg") no-repeat;
+}
+.header .container .container__header .header__contact .header__contact-messenger .messenger__whatsapp {
+  width: 16px;
+  height: 16px;
+  background: url("../../img/whatsapp.svg") no-repeat;
+}
+.header .container .container__logo-text {
+  margin-top: 10px;
+  margin-bottom: 94px;
+  width: 135px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 12px;
+}
+.header .container .container__ball {
+  position: relative;
+  z-index: 2;
+  left: 50%;
+}
+.header .container .container__ball .ball__purple {
+  position: absolute;
+  z-index: 1;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  left: 160px;
+  top: -205px;
+  background: radial-gradient(64% 64% at 27.25% 26.5%, rgba(236, 208, 255, 0.64) 0%, rgba(161, 93, 207, 0.24) 59.67%, rgba(118, 49, 164, 0.208) 78.59%, rgba(86, 24, 128, 0.232) 100%);
+  box-shadow: 3px 6px 27px -10px rgba(177, 118, 217, 0.25);
+  filter: blur(5px);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+}
+.header .container .container__ball .light__purple {
+  z-index: 1;
+  position: absolute;
+  width: 259px;
+  height: 259px;
+  left: -120px;
+  top: -350px;
+  background: #833ab4;
+  opacity: 0.5;
+  filter: blur(196px);
+}
+.header .container .container__ball .ball__red-big {
+  z-index: 1;
+  position: absolute;
+  width: 83px;
+  height: 83px;
+  border-radius: 50%;
+  left: -195px;
+  top: -125px;
+  background: radial-gradient(64% 64% at 27.25% 26.5%, rgba(255, 208, 208, 0.536) 0%, rgba(212, 93, 93, 0.264) 59.67%, rgba(167, 49, 49, 0.248) 78.59%, rgba(130, 25, 25, 0.248) 100%);
+  box-shadow: 3px 6px 27px -10px rgba(223, 125, 125, 0.25);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+}
+
+.section {
+  position: relative;
+  z-index: 2;
+  margin-bottom: 124px;
+}
+.section .container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+.section .container .container__section {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  z-index: 3;
+}
+.section .container .container__section .section__left .section__left-text1 {
+  margin-bottom: 30px;
+  max-width: 362px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 58px;
+}
+.section .container .container__section .section__left .section__left-text1 .text-gradient {
+  font-weight: 900;
+  background: linear-gradient(92deg, #fcb045 27.14%, #ff3f78 121.36%), #e4e5ea;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.section .container .container__section .section__left .section__left-text2 {
+  max-width: 275px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+}
+.section .container .container__section .section__right {
+  padding-top: 15px;
+  width: 291px;
+  text-align: right;
+}
+.section .container .container__section .section__right .section__right-title {
+  margin-bottom: 40px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+}
+.section .container .container__section .section__right .section__right-title .text-gradient {
+  font-weight: 900;
+  text-transform: uppercase;
+  background: linear-gradient(92deg, #fcb045 27.14%, #ff3f78 121.36%), #e4e5ea;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.section .container .container__section .section__right .section__right-content {
+  margin-bottom: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.section .container .container__section .section__right .section__right-content .content__text {
+  max-width: 135px;
+  margin-bottom: 30px;
+}
+.section .container .container__section .section__right .section__right-content .content__text .content__text-title {
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+.section .container .container__section .section__right .section__right-button {
+  width: 262px;
+  height: 61px;
+  background: #4077f3;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #e4e5ea;
+}
+.section .container .container__ball {
+  position: relative;
+  z-index: 2;
+  left: 50%;
+}
+.section .container .container__ball .ball__red {
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  left: 130px;
+  top: -55px;
+  background: radial-gradient(64% 64% at 27.25% 26.5%, rgba(255, 208, 208, 0.48) 0%, rgba(212, 93, 93, 0.248) 59.67%, rgba(167, 49, 49, 0.264) 78.59%, rgba(130, 25, 25, 0.232) 100%);
+  box-shadow: 3px 6px 27px -10px rgba(223, 125, 125, 0.25);
+  filter: blur(2.5px);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+}
+.section .container .container__ball .light__red {
+  position: absolute;
+  width: 311px;
+  height: 311px;
+  left: -830px;
+  top: -330px;
+  background: #961a1a;
+  opacity: 0.5;
+  filter: blur(196px);
+}
+
+.footer {
+  margin-bottom: 20px;
+}
+.footer .container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+.footer .container .container__footer {
+  display: flex;
+  justify-content: space-between;
+}
+.footer .container .container__footer .footer__left {
+  width: 61%;
+  display: flex;
+  justify-content: space-between;
+}
+.footer .container .container__footer .footer__left .footer__left-about .about__title {
+  margin-bottom: 20px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #656566;
+}
+.footer .container .container__footer .footer__left .footer__left-about .about__text {
+  display: block;
+  margin-bottom: 10px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+.footer .container .container__footer .footer__left .footer__left-menu .menu__title {
+  margin-bottom: 20px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #656566;
+}
+.footer .container .container__footer .footer__left .footer__left-menu .menu__colm {
+  display: flex;
+}
+.footer .container .container__footer .footer__left .footer__left-menu .menu__colm .menu__column .menu__text {
+  display: block;
+  margin-bottom: 10px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  width: 212px;
+}
+.footer .container .container__footer .footer__right {
+  text-align: right;
+}
+.footer .container .container__footer .footer__right .footer__right-title {
+  margin-bottom: 20px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #656566;
+}
+.footer .container .container__footer .footer__right .footer__right-numb {
+  color: #e4e5ea;
+  display: block;
+  margin-bottom: 20px;
+}
+.footer .container .container__footer .footer__right .footer__right-messenger {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  justify-content: flex-end;
+}
+.footer .container .container__footer .footer__right .footer__right-messenger .messenger__insta {
+  width: 16px;
+  height: 16px;
+  background: url("../../img/insta.svg") no-repeat;
+  margin-right: 14px;
+}
+.footer .container .container__footer .footer__right .footer__right-messenger .messenger__phone {
+  width: 16px;
+  height: 16px;
+  background: url("../../img/phone.svg") no-repeat;
+  margin-right: 14px;
+}
+.footer .container .container__footer .footer__right .footer__right-messenger .messenger__whatsapp {
+  width: 16px;
+  height: 16px;
+  background: url("../../img/whatsapp.svg") no-repeat;
+}
+.footer .container .container__footer .footer__right .footer__right-address {
+  display: block;
+  margin-bottom: 10px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  margin-bottom: 70px;
+}
+.footer .container .container__footer .footer__right .footer__right-text1 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+}
+.footer .container .container__footer .footer__right .footer__right-text2 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}/*# sourceMappingURL=style.css.map */
