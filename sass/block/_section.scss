@@ -1,16 +1,29 @@
 .section {
   position: relative;
   z-index: 2;
-  margin-bottom: 124px;
+  padding: 95px 0 124px 0;
+  overflow: hidden;
+
+  @media screen and (max-width: 320px) {
+    margin-bottom: 0;
+    padding: 40px 0 45px 0;
+  }
+
   .container {
     max-width: 1140px;
     margin: 0 auto;
+    @media screen and (max-width: 320px) {
+      max-width: 290px;
+    }
 
     .container__section {
       display: flex;
       justify-content: space-between;
       position: relative;
       z-index: 3;
+      @media screen and (max-width: 320px) {
+        flex-wrap: wrap;
+      }
 
       .section__left {
         .section__left-text1 {
@@ -21,12 +34,19 @@
           font-weight: 400;
           font-size: 48px;
           line-height: 58px;
+          @media screen and (max-width: 320px) {
+            margin-bottom: 15px;
+            font-size: 36px;
+            line-height: 44px;
+            max-width: 100%;
+          }
 
           .text-gradient {
-            font-weight: 900;
+            font-weight: 700;
             @include textGradient;
           }
         }
+
         .section__left-text2 {
           max-width: 275px;
           font-family: "Montserrat";
@@ -34,12 +54,21 @@
           font-weight: 400;
           font-size: 18px;
           line-height: 22px;
+          @media screen and (max-width: 320px) {
+            max-width: 100%;
+          }
         }
       }
+
       .section__right {
         padding-top: 15px;
         width: 291px;
         text-align: right;
+        @media screen and (max-width: 320px) {
+          text-align: left;
+          width: 100%;
+          padding-top: 45px;
+        }
 
         .section__right-title {
           margin-bottom: 40px;
@@ -53,25 +82,81 @@
             font-weight: 900;
             text-transform: uppercase;
             @include textGradient;
+            @media screen and (max-width: 320px) {
+              text-transform: none;
+            }
           }
         }
+
         .section__right-content {
           margin-bottom: 30px;
           display: flex;
           flex-wrap: wrap;
           justify-content: space-between;
+          @media screen and (max-width: 320px) {
+            display: none;
+          }
 
           .content__text {
             max-width: 135px;
             margin-bottom: 30px;
+
             .content__text-title {
               text-transform: uppercase;
               margin-bottom: 6px;
+              font-family: "Inter";
+              font-style: normal;
+              font-weight: 500;
+              font-size: 18px;
+              line-height: 22px;
             }
             .content__text-text {
+              font-family: "Montserrat";
+              font-style: normal;
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 20px;
             }
           }
         }
+
+        .section__right-mobile {
+          width: 100%;
+          display: none;
+          flex-wrap: wrap;
+          font-family: "Montserrat";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 13px;
+          line-height: 16px;
+          letter-spacing: 0.05em;
+          text-transform: uppercase;
+          @media screen and (max-width: 320px) {
+            display: flex;
+          }
+
+          .mobile__dignities {
+            width: 43%;
+            margin-bottom: 15px;
+            display: flex;
+            position: relative;
+
+            .mobile__dignities-line {
+              position: absolute;
+              left: 0px;
+              top: -4px;
+            }
+
+            .mobile__dignities-text {
+              margin-left: 15px;
+            }
+          }
+
+          .mobile__dignities_width {
+            width: 50%;
+          }
+        }
+
         .section__right-button {
           width: 262px;
           height: 61px;
@@ -83,6 +168,9 @@
           line-height: 19px;
           text-align: center;
           color: #e4e5ea;
+          @media screen and (max-width: 320px) {
+            display: none;
+          }
         }
       }
     }
@@ -91,6 +179,11 @@
       position: relative;
       z-index: 2;
       left: 50%;
+
+      @media screen and (max-width: 320px) {
+        width: 100%;
+      }
+
       .ball__red {
         position: absolute;
         width: 28px;
@@ -98,7 +191,6 @@
         border-radius: 50%;
         left: 130px;
         top: -55px;
-
         background: radial-gradient(
           64% 64% at 27.25% 26.5%,
           rgba(255, 208, 208, 0.48) 0%,
@@ -109,6 +201,13 @@
         box-shadow: 3px 6px 27px -10px rgba(223, 125, 125, 0.25);
         filter: blur(2.5px);
         backdrop-filter: blur(2px);
+
+        @media screen and (max-width: 320px) {
+          width: 43px;
+          height: 43px;
+          left: -130px;
+          top: 0px;
+        }
       }
 
       .light__red {
@@ -117,10 +216,52 @@
         height: 311px;
         left: -830px;
         top: -330px;
-
         background: #961a1a;
         opacity: 0.5;
         filter: blur(196px);
+        @media screen and (max-width: 320px) {
+          width: 211px;
+          height: 211px;
+          left: -215px;
+          top: -170px;
+        }
+      }
+
+      .ball__purple {
+        display: none;
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        left: 130px;
+        top: -180px;
+        background: radial-gradient(
+          64% 64% at 27.25% 26.5%,
+          rgba(236, 208, 255, 0.64) 0%,
+          rgba(161, 93, 207, 0.24) 59.67%,
+          rgba(118, 49, 164, 0.208) 78.59%,
+          rgba(86, 24, 128, 0.232) 100%
+        );
+        box-shadow: 3px 6px 27px -10px rgba(177, 118, 217, 0.25);
+        filter: blur(5px);
+        backdrop-filter: blur(2px);
+        @media screen and (max-width: 320px) {
+          display: block;
+        }
+      }
+
+      .light__purpule {
+        display: none;
+        position: absolute;
+        width: 259px;
+        height: 259px;
+        left: 100px;
+        top: -310px;
+        background: #833ab4;
+        opacity: 0.5;
+        filter: blur(196px);
+        @media screen and (max-width: 320px) {
+          display: block;
+        }
       }
     }
   }

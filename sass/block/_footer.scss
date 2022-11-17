@@ -1,38 +1,84 @@
 .footer {
   margin-bottom: 20px;
+  @media screen and (max-width: 320px) {
+    padding-top: 40px;
+    margin-bottom: 0;
+    padding-bottom: 60px;
+    position: relative;
+    z-index: 100;
+    background: #1E1E1E;
+  }
   .container {
     max-width: 1140px;
     margin: 0 auto;
+    @media screen and (max-width: 320px) {
+      max-width: 290px;
+    }
 
     .container__footer {
       @include position;
+      @media screen and (max-width: 320px) {
+        flex-wrap: wrap;
+      }
 
       .footer__left {
         width: 61%;
         @include position;
+        @media screen and (max-width: 320px) {
+          flex-wrap: wrap;
+          width: 100%;
+        }
 
         .footer__left-about {
+          @media screen and (max-width: 320px) {
+            margin-bottom: 20px;
+          }
           .about__title {
             @include footerTitle;
+            @media screen and (max-width: 320px) {
+              font-size: 12px;
+              line-height: 15px;
+            }
           }
 
           .about__text {
             @include footerText;
+            @media screen and (max-width: 320px) {
+              font-size: 14px;
+              line-height: 17px;
+            }
           }
         }
 
         .footer__left-menu {
           .menu__title {
             @include footerTitle;
+            @media screen and (max-width: 320px) {
+              font-size: 12px;
+              line-height: 15px;
+            }
           }
 
           .menu__colm {
             display: flex;
+            @media screen and (max-width: 320px) {
+              margin-bottom: 20px;
+            }
 
             .menu__column {
               .menu__text {
                 @include footerText;
                 width: 212px;
+                @media screen and (max-width: 320px) {
+                  width: 148px;
+                  font-size: 12px;
+                  line-height: 15px;
+                }
+              }
+              .menu__text_width {
+                @media screen and (max-width: 320px) {
+                  width: 105px;
+                }
               }
             }
           }
@@ -40,9 +86,16 @@
       }
       .footer__right {
         text-align: right;
+        @media screen and (max-width: 320px) {
+          text-align: left;
+        }
 
         .footer__right-title {
           @include footerTitle;
+          @media screen and (max-width: 320px) {
+            font-size: 12px;
+            line-height: 15px;
+          }
         }
         .footer__right-numb {
           @include colText;
@@ -53,8 +106,9 @@
           margin-bottom: 20px;
           @include position;
           justify-content: flex-end;
-          // width: 66px;
-          // text-align: right;
+          @media screen and (max-width: 320px) {
+            justify-content: flex-start;
+          }
 
           .messenger__insta {
             @include iconSize;
@@ -74,6 +128,11 @@
         .footer__right-address {
           @include footerText;
           margin-bottom: 70px;
+          @media screen and (max-width: 320px) {
+            font-size: 14px;
+            line-height: 17px;
+            margin-bottom: 50px;
+          }
         }
         .footer__right-text1 {
           font-family: "Montserrat";

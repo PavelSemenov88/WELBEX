@@ -1,10 +1,20 @@
 .header {
   margin-top: 57px;
-  
+  @media screen and (max-width: 320px) {
+    margin-top: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    z-index: 100;
+    background: #1e1e1e;
+  }
 
   .container {
     max-width: 1140px;
     margin: 0 auto;
+    @media screen and (max-width: 320px) {
+      max-width: 290px;
+    }
 
     .container__header {
       @include position;
@@ -16,13 +26,22 @@
         width: 61%;
         @include position;
         align-items: center;
+        @media screen and (max-width: 320px) {
+          width: 100%;
+        }
 
         .header__logo {
           width: 140px;
+          @media screen and (max-width: 320px) {
+            display: none;
+          }
 
           .header__logo-img {
             height: 24px;
             background: url("../../img/logo_welbex.svg") no-repeat;
+            @media screen and (max-width: 320px) {
+              display: none;
+            }
           }
 
           .header__logo-text {
@@ -34,10 +53,14 @@
             @include colText;
           }
         }
+
         .header__menu {
           width: 72%;
           display: flex;
           justify-content: space-between;
+          @media screen and (max-width: 320px) {
+            width: 100%;
+          }
 
           .header__menu-text {
             .menu-text {
@@ -47,15 +70,29 @@
               font-size: 16px;
               line-height: 19px;
               @include colText;
+              @media screen and (max-width: 320px) {
+                font-size: 12px;
+                line-height: 15px;
+                text-transform: uppercase;
+              }
+            }
+          }
+
+          .header__menu-text_mobile {
+            @media screen and (max-width: 320px) {
+              display: none;
             }
           }
         }
       }
+
       .header__contact {
         width: 27%;
         @include position;
         align-items: center;
-        
+        @media screen and (max-width: 320px) {
+          display: none;
+        }
 
         .header__contact-numb {
           @include colText;
@@ -88,20 +125,28 @@
         }
       }
     }
+
     .container__logo-text {
       margin-top: 10px;
-      margin-bottom: 94px;
+      // margin-bottom: 94px;
       width: 135px;
       font-family: "Montserrat";
       font-style: normal;
       font-weight: 300;
       font-size: 10px;
       line-height: 12px;
+      @media screen and (max-width: 320px) {
+        display: none;
+      }
     }
+
     .container__ball {
       position: relative;
       z-index: 2;
       left: 50%;
+      @media screen and (max-width: 320px) {
+        display: none;
+      }
 
       .ball__purple {
         position: absolute;
@@ -110,8 +155,7 @@
         height: 60px;
         border-radius: 50%;
         left: 160px;
-        top: -205px;
-
+        top: -115px;
         background: radial-gradient(
           64% 64% at 27.25% 26.5%,
           rgba(236, 208, 255, 0.64) 0%,
@@ -123,13 +167,14 @@
         filter: blur(5px);
         backdrop-filter: blur(2px);
       }
+
       .light__purple {
         z-index: 1;
         position: absolute;
         width: 259px;
         height: 259px;
         left: -120px;
-        top: -350px;
+        top: -265px;
         background: #833ab4;
         opacity: 0.5;
         filter: blur(196px);
@@ -142,7 +187,7 @@
         height: 83px;
         border-radius: 50%;
         left: -195px;
-        top: -125px;
+        top: -35px;
         background: radial-gradient(
           64% 64% at 27.25% 26.5%,
           rgba(255, 208, 208, 0.536) 0%,
