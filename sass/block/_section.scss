@@ -2,11 +2,12 @@
   position: relative;
   z-index: 2;
   padding: 95px 0 124px 0;
-  overflow: hidden;
+  
 
   @media screen and (max-width: 320px) {
     margin-bottom: 0;
     padding: 40px 0 45px 0;
+    overflow: hidden;
   }
 
   .container {
